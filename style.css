@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: #f5f4ff;
+    color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 60px;
+    border: 1px solid #D7D3ff;
+}
+.logo {
+    color: #7b5cff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.comprimento{
+    color: #4a4a4a;
+    font-size: 1rem;
+}
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px 20px;
+}
+.add-tarefas h2 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+}
+.task-input input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #d8d3ff;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #ece8ff;
+    transition: 0.3s;
+}
+.task-input input:focus {
+    border-color: #7b5cff;
+}
+.task-input button {
+    background-color: #7b5cff;
+    color: #fff;
+    border: none;
+    padding: 3%;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.task-input button:hover {
+    background-color: #6949ff;
+}
+::placeholder{
+    color:  #7063f0;
+}
+.tarefas {
+    margin-top: 40px;
+}
+.tarefas h3 {
+    font-size: 1.1rem;
+}
+.subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+.no-tasks {
+    text-align: center;
+    color: #666;
+}
+.no-tasks .emoji {
+    margin-top: 150px;
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+.linha{
+  border-bottom: 1px solid #D7D3ff;
+  margin-top: 48px;
+}
