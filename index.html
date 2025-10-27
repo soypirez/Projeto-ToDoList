@@ -7,31 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="cabeçalho">
         <h1 class="logo">TodoList</h1>
-        <p class="comprimento">Bom dia, <strong>Samuel Lima</strong> 👋</p>
+        <p id="saudacao" class="Bemvindo"></p>
     </header>
 
-    <main class="container">
-        <section class="add-tarefas">
+    <main class="tarefas">
+        <section class="adicioanartarefas">
             <h2>Adicionar tarefas</h2>
-            <div class="task-input">
-                <input type="text" placeholder="Nome da tarefa">
-                <button>Adicionar</button>
-            </div>
+            <form id="form" class="entradatarefas">
+                <input type="text" id="nomeTarefa" placeholder="Nome da tarefa" required>
+                <button type="submit">Adicionar</button>
+            </form>
         </section>
 
-        <div class="linha"></div>
+        <p class="linha"></p>
 
         <section class="tarefas">
-            <h3>Minhas tarefas</h3>
+
+            <div id="headerTarefas" class="titulo-tarefas" style="display: none;">
+                <h3>Minhas tarefas</h3>
+                <p id="contador" class="contador">0 de 0 concluídas</p>
+            </div>
+
             <p class="subtitle">Veja todas as suas tarefas criadas na plataforma.</p>
 
-            <div class="no-tasks">
+            <div id="listaTarefas"></div>
+
+            <div id="noTasks" class="no-tasks">
                 <span class="emoji">😪</span>
                 <p>Nenhum registro encontrado!</p>
             </div>
         </section>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>
